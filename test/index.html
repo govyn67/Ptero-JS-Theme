@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PteroJS Theme Test</title>
+  <link rel="stylesheet" href="../theme/css/ptero-theme.css">
+  <script defer src="../theme/js/ptero-theme.js"></script>
+  <script defer src="../theme/js/plugin-manager.js"></script>
+  <script defer src="../theme/js/version-manager.js"></script>
+</head>
+<body class="pt-layout">
+
+  <!-- Sidebar -->
+  <aside class="pt-sidebar">
+    <div class="pt-brand">
+      <div class="pt-brand-icon">P</div>
+      <div class="pt-brand-text">PteroJS Panel</div>
+    </div>
+    <nav class="pt-nav">
+      <div class="pt-nav-item active" onclick="window.location.hash=''">
+        <span>Dashboard</span>
+      </div>
+      <div class="pt-nav-item" onclick="window.location.hash='plugin-manager'">
+        <span>Plugin Manager</span>
+      </div>
+      <div class="pt-nav-item" onclick="window.location.hash='version-manager'">
+        <span>Version Manager</span>
+      </div>
+      <div class="pt-nav-item">
+        <span>Users</span>
+      </div>
+      <div class="pt-nav-item">
+        <span>Settings</span>
+      </div>
+    </nav>
+  </aside>
+
+  <!-- Main content -->
+  <main class="pt-main">
+    <h1>PteroJS Theme Test</h1>
+    <p>If you see dark slate background, indigo buttons, and rounded cards — the theme is working.</p>
+
+    <div class="pt-card">
+      <div class="pt-card-header">
+        <div class="pt-card-title">Theme Card</div>
+        <button class="pt-btn pt-btn-primary">Primary</button>
+        <button class="pt-btn pt-btn-secondary">Secondary</button>
+        <button class="pt-btn pt-btn-danger">Danger</button>
+      </div>
+      <div class="pt-card-body">
+        <p>Card with shadow and hover effect.</p>
+        <div class="pt-flex pt-gap-2 pt-mt-2">
+          <span class="pt-badge pt-badge-success">Online</span>
+          <span class="pt-badge pt-badge-warning">Warning</span>
+          <span class="pt-badge pt-badge-danger">Offline</span>
+          <span class="pt-badge pt-badge-info">Info</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      if (window.PteroTheme) {
+        console.log("PteroTheme initialized");
+        PteroTheme.showToast("Theme loaded successfully!", "success");
+      }
+    });
+  </script>
+</body>
+</html>
