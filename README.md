@@ -23,19 +23,7 @@ Replace `<your-username>` with your GitHub username and `main` with your branch.
 
 ```bash
 # Download everything
-git clone https://github.com/<your-username>/Ptero-JS-Theme.git
-cd Ptero-JS-Theme
-
-# Or download individual files
-curl -L https://raw.githubusercontent.com/<your-username>/Ptero-JS-Theme/main/install.sh -o install.sh
-curl -L https://raw.githubusercontent.com/<your-username>/Ptero-JS-Theme/main/theme/css/ptero-theme.css -o theme/css/ptero-theme.css
-curl -L https://raw.githubusercontent.com/<your-username>/Ptero-JS-Theme/main/theme/js/ptero-theme.js -o theme/js/ptero-theme.js
-curl -L https://raw.githubusercontent.com/<your-username>/Ptero-JS-Theme/main/theme/js/plugin-manager.js -o theme/js/plugin-manager.js
-curl -L https://raw.githubusercontent.com/<your-username>/Ptero-JS-Theme/main/theme/js/version-manager.js -o theme/js/version-manager.js
-curl -L https://raw.githubusercontent.com/<your-username>/Ptero-JS-Theme/main/server/routes/plugins.js -o server/routes/plugins.js
-curl -L https://raw.githubusercontent.com/<your-username>/Ptero-JS-Theme/main/server/routes/versions.js -o server/routes/versions.js
-```
-
+git clone https://github.com/govyn67/Ptero-JS-Theme.git
 ---
 
 ## Install (run on your ptero-js panel server)
